@@ -39,3 +39,7 @@ PRODUCT_DEFAULT_PROPERTIES += \
 # NFC Firmware
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/libsn100u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsn100u_fw.so
+
+# RRO Overlays
+PRODUCT_PACKAGES += \
+    RegulatoryInfoOverlayVeuxJP
