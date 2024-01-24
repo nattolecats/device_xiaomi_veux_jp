@@ -40,6 +40,12 @@ PRODUCT_DEFAULT_PROPERTIES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/libsn100u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsn100u_fw.so
 
+# Felica configs
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/felica/common.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica/common.cfg \
+    $(LOCAL_PATH)/felica/mfm.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica/mfm.cfg \
+    $(LOCAL_PATH)/felica/mfs.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica/mfs.cfg
+
 # RRO Overlays
 PRODUCT_PACKAGES += \
     RegulatoryInfoOverlayVeuxJP
