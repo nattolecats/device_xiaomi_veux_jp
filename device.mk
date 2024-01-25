@@ -51,6 +51,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     RegulatoryInfoOverlayVeuxJP
 
+# Init
+PRODUCT_PACKAGES += \
+    init.veux.jp.rc \
+    init.veux.jp.sh
+
+# SELinux
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/vintf/manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/vintf/framework_compatibility_matrix.xml

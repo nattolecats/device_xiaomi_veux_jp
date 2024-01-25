@@ -1,0 +1,3 @@
+on init
+    mount none /vendor/etc/libnfc-nci.conf /vendor/etc/libnfc-nci-nq.conf bind
+    mount none /vendor/etc/libnfc-nxp.conf /vendor/etc/libnfc-nxp-pnscr.conf bind
